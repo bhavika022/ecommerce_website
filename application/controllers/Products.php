@@ -1,5 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+//is used to make sure that the request has gone through index. php in your root dir. This is for reasons such as making sure
+// that all Codeigniter base classes are being loaded and making sure certain vars have been set
 
 class Products extends CI_Controller{
     
@@ -9,12 +11,12 @@ class Products extends CI_Controller{
         // Load cart library
         $this->load->library('cart');
         
-        // Load product model
+        // Load models
         $this->load->model('product');
         $this->load->model('user');
         $this->isUserLoggedIn = $this->session->userdata('isUserLoggedIn');
     }
-    
+      
     function index(){
         $data = array();
         
@@ -44,7 +46,7 @@ class Products extends CI_Controller{
         $data = array();
         
         // Fetch products from the database
-        $data['products'] = $this->product->getRows();
+        //$data['products'] = $this->product->getRows();
 
         if($this->isUserLoggedIn){
             $con = array(
@@ -68,7 +70,7 @@ class Products extends CI_Controller{
         $data = array();
         
         // Fetch products from the database
-        $data['products'] = $this->product->getRows();
+        //$data['products'] = $this->product->getRows();
 
         if($this->isUserLoggedIn){
             $con = array(

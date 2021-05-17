@@ -47,15 +47,6 @@
                 </div>
             </div>    
         </div>
-        <div class="col-md-8 col-md-offset-2 edit-field">
-            <div class="form-group">
-                <label class="col-md-3">Status</label>
-                <div class="col-md-6">
-                    <input type="number" min="0" max="1" name="status" class="form-control" value="<?php echo $product->status; ?>"required=''>
-                    <?php echo form_error('status','<p class="help-block">','</p>'); ?>
-                </div>
-            </div>
-        </div>
         <div class="col-md-8 col-md-offset-2 pull-right edit-field">
             <input type="submit" name="Save" class="btn btn-success">
         </div>

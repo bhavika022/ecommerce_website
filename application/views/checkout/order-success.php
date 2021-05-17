@@ -9,19 +9,6 @@
     <!-- Include jQuery library -->
     <script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
 
-    <script>
-    // Update item quantity
-    function updateCartItem(obj, rowid){
-        $.get("<?php echo base_url('cart/updateItemQty/'); ?>", {rowid:rowid, qty:obj.value}, function(resp){
-            if(resp == 'ok'){
-                location.reload();
-            }else{
-                alert('Cart update failed, please try again.');
-            }
-        });
-    }
-    </script>
-
 </head>
 
 <body>

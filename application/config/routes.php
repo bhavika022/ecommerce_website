@@ -58,9 +58,10 @@ $route['products'] = "admin/index";
 $route['productsCreate']['post'] = "admin/store";
 $route['productsEdit/(:any)'] = "admin/edit/$1";
 $route['productsUpdate/(:any)']['put'] = "admin/update/$1";
-$route['productsDelete/(:any)']['delete'] = "admin/delete/$1";
+$route['productsDelete/(:any)']['delete'] = "admin/delete/$1"; 
 
 $route['customersCreate']['post'] = "admin/cus_store";
 $route['customersEdit/(:any)'] = "admin/cus_edit/$1";
 $route['customersUpdate/(:any)']['put'] = "admin/cus_update/$1";
 $route['customersDelete/(:any)']['delete'] = "admin/cus_delete/$1";
+

@@ -25,6 +25,10 @@
     font-family: arial;
   }
 
+  .check-field{
+    padding-top: 10px;
+  }
+
 
   .footer-clean {
     padding:50px 0;

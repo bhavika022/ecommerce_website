@@ -14,7 +14,7 @@ class User extends CI_Model{
         $this->db->select('*'); 
         $this->db->from($this->table); 
          
-        if(array_key_exists("conditions", $params)){ 
+        if(array_key_exists("conditions", $params)){                //Checks if the given key or index exists in the array    //*
             foreach($params['conditions'] as $key => $val){ 
                 $this->db->where($key, $val); 
             } 

@@ -17,7 +17,7 @@ class Cart extends CI_Controller{
         $data = array();
         
         // Retrieve cart data from the session
-        $data['cartItems'] = $this->cart->contents();
+        $data['cartItems'] = $this->cart->contents();       //?
         
         // Load the cart view
         $this->load->view('products/nav1');

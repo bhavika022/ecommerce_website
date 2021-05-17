@@ -40,7 +40,7 @@
             <div class="form-group">
                 <label class="col-md-3">Email</label>
                 <div class="col-md-9">
-                    <textarea name="email" class="form-control"></textarea>
+                    <input name="email" class="form-control"></input>
                 </div>
             </div>
         </div>

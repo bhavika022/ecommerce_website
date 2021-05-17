@@ -1,7 +1,7 @@
 @echo off
-set "PATH=%PATH%;I:\xampp\htdocs\ecomm"
-call I:
-call cd xampp\htdocs\ecomm 
+set "PATH=%PATH%;C:\xampp\htdocs\ecomm"
+call C:
+call cd C:\xampp\htdocs\ecomm 
 :loop
-call php index.php Tools
-Pause
+call php index.php Tools database_backup
+Pause 

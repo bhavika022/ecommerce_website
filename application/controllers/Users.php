@@ -45,7 +45,7 @@ class Users extends CI_Controller {
         $data = array(); 
          
         // Get messages from the session 
-        if($this->session->userdata('success_msg')){ 
+        if($this->session->userdata('success_msg')){            //*
             $data['success_msg'] = $this->session->userdata('success_msg'); 
             $this->session->unset_userdata('success_msg'); 
         } 
@@ -64,14 +64,14 @@ class Users extends CI_Controller {
                     'returnType' => 'single', 
                     'conditions' => array( 
                         'email'=> $this->input->post('email'), 
-                        'password' => md5($this->input->post('password')), 
+                        'password' => md5($this->input->post('password')),          //encryption
                         'status' => 1 
                     ) 
                 ); 
                 $checkLogin = $this->user->getRows($con); 
                 if($checkLogin){ 
                     $this->session->set_userdata('isUserLoggedIn', TRUE); 
-                    $this->session->set_userdata('userId', $checkLogin['id']); 
+                    $this->session->set_userdata('userId', $checkLogin['id']);              //*
                     redirect('products/index'); 
                 }else{ 
                     $data['error_msg'] = 'Wrong email or password, please try again.'; 
@@ -139,6 +139,7 @@ class Users extends CI_Controller {
 
     public function edit_user($id)
    {
+        $this->load->view('products/nav1');
        $product = $this->db->get_where('users', array('id' => $id))->row();
        //$this->load->view('includes/header');
        $this->load->view('users/edit_user',array('product'=>$product));

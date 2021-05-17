@@ -1,89 +1,103 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link  href="<?php echo base_url('assets/css/main.css');?>" rel="stylesheet">
-</head>
-<body>
-  <div class="about">
-    <div class="bg-light">
-      <div class="container py-5">
-        <div class="row h-100 align-items-center py-5">
-          <div class="col-lg-6">
-            <h1 class="display-4">About us</h1>
-            <p class="lead text-muted mb-0">Our mission is to be Earth’s most customer-centric company. Shoppers.com is guided by four principles: customer 
-            obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking.</p>
-          </div>
-          <div class="col-lg-6 d-none d-lg-block"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/illus_kftyh4.png" alt="" class="img-fluid"></div>
-        </div>
-      </div>
-    </div>
 
-    <div class="bg-white py-5">
-      <div class="container py-5">
-        <div class="row align-items-center mb-5">
-          <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
-            <h2 class="font-weight-light">Leadership Principles</h2>
-            <p class="font-italic text-muted mb-4">Our Leadership Principles are more than inspirational wall hangings. The principles guide
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Bootstrap -->
+  <link  href="<?php echo base_url('assets/css/abt_css/bootstrap.min.css');?>" rel="stylesheet">
+  <link  href="<?php echo base_url('assets/css/abt_css/style.css');?>" rel="stylesheet">
+  <link  href="<?php echo base_url('assets/css/abt_css/themify-icons.css');?>" rel="stylesheet">
+  <link  href="<?php echo base_url('assets/css/abt_css/dosis-font.css');?>" rel="stylesheet">
+
+  
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".side-menu">
+
+    
+
+      
+      <div class="container">
+        <!-- Start: Desc -->
+        <div class="row me-row content-ct">
+          <h1 class="row-title">About Us</h1>
+          <h2 class="row-title">Why Shoppers.com Is Super Cool?</h2>
+          <div class="col-md-4 feature">
+            
+            <h3>Our Principles</h3>
+            <p>Shoppers.com is guided by four principles: customer obsession rather than competitor focus, passion for invention,
+             commitment to operational excellence, and long-term thinking.</p>
+          </div>
+          <div class="col-md-4 feature">
+            
+            <h3>Leadership Principles</h3>
+            <p>Our Leadership Principles are more than inspirational wall hangings. The principles guide
             our discussions and decisions every day.</p>
           </div>
-          <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834139/img-1_e25nvh.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
-        </div>
-        <!--<div class="row align-items-center">
-          <div class="col-lg-5 px-5 mx-auto"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/img-2_vdgqgn.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
-          <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
-            <h2 class="font-weight-light">Awards and Recognition</h2>
-            <p class="font-italic text-muted mb-4">We are honored to be recognized for the work we do on behalf of our customers, employees, and
+          <div class="col-md-4 feature">
+            
+            <h3>Awards and Recognition</h3>
+            <p>We are honored to be recognized for the work we do on behalf of our customers, employees, and
             communities every day.</p>
           </div>
         </div>
-      </div>
-    </div>--> 
+        <!-- End: Desc -->
 
-    <div class="bg-light py-5">
-      <div class="container py-5">
-        <div class="row mb-4">
-          <div class="col-lg-5">
-            <h2 class="display-4 font-weight-light">Our team</h2>
+        <!-- Start: Speakers -->
+        <div class="row me-row content-ct speaker" id="speakers">
+          <h2 class="row-title">Our Team</h2>
+          <div class="col-md-4 col-sm-6 feature">
+            <img src="<?php echo base_url('assets/img/speaker-1.png');?>" class="speaker-img">
+            <h3>Simon Collins</h3>
+            <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands, record labels, governments, polar explorers, and most other things...</p>
+            
+          </div>
+          <div class="col-md-4 col-sm-6 feature">
+            <img src="<?php echo base_url('assets/img/speaker-2.png');?>" class="speaker-img">
+            <h3>Stephanie Troeth</h3>
+            <p>Stephie is a user experience researcher and designer. In over 15 years of working on the web, she has worn many hats, including a product lead for a tech startup in publishing...</p>
+          </div>
+          <div class="col-md-4 col-sm-6 feature">
+            <img src="<?php echo base_url('assets/img/speaker-3.png');?>" class="speaker-img">
+            <h3>Harry Roberts</h3>
+            <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously working as Senior UI Developer for Sky. He Tweets at...</p>
+            
+          </div>
+          <div class="col-md-4 col-sm-6 feature">
+            <img src="<?php echo base_url('assets/img/speaker-4.png');?>" class="speaker-img">
+            <h3>Geri Coady</h3>
+            <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously working as Senior UI Developer for Sky. He Tweets at...</p>
+            
+          </div>
+          <div class="col-md-4 col-sm-6 feature">
+            <img src="<?php echo base_url('assets/img/speaker-5.png');?>" class="speaker-img">
+            <h3>Andy Budd</h3>
+            <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously working as Senior UI Developer for Sky. He Tweets at...</p>
+            
+          </div>
+          <div class="col-md-4 col-sm-6 feature">
+            <img src="<?php echo base_url('assets/img/speaker-6.png');?>" class="speaker-img">
+            <h3>Christian Lauke</h3>
+            <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously working as Senior UI Developer for Sky. He Tweets at...</p>
+            
           </div>
         </div>
-
-        <div class="row text-center">
-          <!-- Team item-->
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834132/avatar-4_ozhrib.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-              <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-            </div>
-          </div>
-          <!-- End-->
-
-          <!-- Team item-->
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-              <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-            </div>
-          </div>
-          <!-- End-->
-
-          <!-- Team item-->
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834133/avatar-2_f8dowd.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-              <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-            </div>
-          </div>
-          <!-- End-->
-
-          <!-- Team item-->
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834133/avatar-1_s02nlg.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-              <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-            </div>
-          </div>
-          <!-- End-->
-
-        </div>
+        <!-- End: Speakers -->
       </div>
-    </div>
-  </div>
-</body>
-</html>
+
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script  src="<?php echo base_url('assets/js/jquery.min.js');?>" rel="stylesheet"></script>
+      
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script  src="<?php echo base_url('assets/js/bootstrap.min.js');?>" rel="stylesheet"></script>
+      <script  src="<?php echo base_url('assets/js/jquery.easing.min.js');?>" rel="stylesheet"></script>
+      
+
+      
+      
+    </body>
+    </html>

@@ -1,11 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin extends CI_Controller {
-   /**
-    * Get All Data from this method.
-    *
-    * @return Response
-   */
+   
    public function __construct() {
     //load database in autoload libraries 
       parent::__construct(); 
@@ -17,9 +13,8 @@ class Admin extends CI_Controller {
    }
    public function index()
    {
-       $products=new ProductsModel;
+       $products=new ProductsModel;                 //$products = obj
        $data['data']=$products->get_products();
-       //$this->load->view('includes/header'); 
        $this->load->view('products/nav_admin');       
        $this->load->view('products/list',$data);
        
@@ -151,13 +146,13 @@ class Admin extends CI_Controller {
 
    public function generate_cus_pdf() {
         //load pdf library
-        $this->load->library('Pdf');
+        $this->load->library('PdfC');
         
-        $pdf = new Pdf(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+        $pdf = new PdfC(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
         // set document information
         $pdf->SetCreator(PDF_CREATOR);
         $pdf->SetAuthor('https://roytuts.com');
-        $pdf->SetTitle('Sales Information for Customers');
+        $pdf->SetTitle('Customers Information');
         $pdf->SetSubject('Report generated using Codeigniter and TCPDF');
         $pdf->SetKeywords('TCPDF, PDF, MySQL, Codeigniter');
 
@@ -222,13 +217,13 @@ class Admin extends CI_Controller {
 
     public function generate_ord_pdf() {
         //load pdf library
-        $this->load->library('Pdf');
+        $this->load->library('PdfO');
         
-        $pdf = new Pdf(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+        $pdf = new PdfO(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
         // set document information
         $pdf->SetCreator(PDF_CREATOR);
         $pdf->SetAuthor('https://roytuts.com');
-        $pdf->SetTitle('Sales Information for Customers');
+        $pdf->SetTitle('Order Information');
         $pdf->SetSubject('Report generated using Codeigniter and TCPDF');
         $pdf->SetKeywords('TCPDF, PDF, MySQL, Codeigniter');
 
@@ -293,13 +288,13 @@ class Admin extends CI_Controller {
 
     public function generate_usr_pdf() {
         //load pdf library
-        $this->load->library('Pdf');
+        $this->load->library('PdfU');
         
-        $pdf = new Pdf(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+        $pdf = new PdfU(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
         // set document information
         $pdf->SetCreator(PDF_CREATOR);
         $pdf->SetAuthor('https://roytuts.com');
-        $pdf->SetTitle('Sales Information for Customers');
+        $pdf->SetTitle('Users Information');
         $pdf->SetSubject('Report generated using Codeigniter and TCPDF');
         $pdf->SetKeywords('TCPDF, PDF, MySQL, Codeigniter');
 
@@ -370,7 +365,7 @@ class Admin extends CI_Controller {
         // set document information
         $pdf->SetCreator(PDF_CREATOR);
         $pdf->SetAuthor('https://roytuts.com');
-        $pdf->SetTitle('Customer Information');
+        $pdf->SetTitle('Products Information');
         $pdf->SetSubject('Report generated using Codeigniter and TCPDF');
         $pdf->SetKeywords('TCPDF, PDF, MySQL, Codeigniter');
     

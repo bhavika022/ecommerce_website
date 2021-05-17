@@ -11,7 +11,7 @@
 
     <script>
     // Update item quantity
-    function updateCartItem(obj, rowid){
+    function updateCartItem(obj, rowid){                //*
         $.get("<?php echo base_url('cart/updateItemQty/'); ?>", {rowid:rowid, qty:obj.value}, function(resp){
             if(resp == 'ok'){
                 location.reload();
@@ -62,7 +62,7 @@
                 <td></td>
                 <td></td>
                 <td><strong>Cart Total</strong></td>
-                <td class="text-right"><strong><?php echo 'Rs '.$this->cart->total().''; ?></strong></td>
+                <td class="text-right"><strong><?php echo 'Rs '.$this->cart->total().''; ?></strong></td> 
                 <td></td>
             </tr>
             <?php } ?>
